@@ -31,8 +31,9 @@ function parse_git_branch () {
 
 # This creates a prompt that looks like this:
 #
-#     Ryans-MacBook-Pro: ~/Code/arktos/pegasus (fix-db-create)
-#     âžœ 
+#     Nautilus: ~/Code/myProject (my-branch)
+#     →
+#
 export PS1="\[$Cyan\]\h: \[$Yellow\]\w\[$Green\]\$(parse_git_branch)\n\[$White\]→\[$Color_Off\] "
 
 
