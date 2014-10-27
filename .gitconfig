@@ -1,0 +1,12 @@
+[user]
+	name = Ryan Atallah
+	email = mail@ryanatallah.com
+[core]
+  editor = mvim
+[alias]
+  a = add .
+  c = commit
+  ca = commit -a
+  cam = commit -am
+  co = checkout
+  cb = checkout -b
