@@ -5,8 +5,10 @@
   editor = mvim
 [alias]
   a = add .
+  br = branch
   c = commit
   ca = commit -a
   cam = commit -am
   co = checkout
   cb = checkout -b
+  st = status
