@@ -10,5 +10,5 @@
   ca = commit -a
   cam = commit -am
   co = checkout
-  cb = checkout -b
+  cob = checkout -b
   st = status
