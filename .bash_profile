@@ -9,6 +9,12 @@ export PATH=$PATH:$GOROOT/bin
 
 
 ######################
+# CONFIG VARS
+
+export EDITOR=/usr/bin/vim
+
+
+######################
 # PROMPT
 
 # Reset
