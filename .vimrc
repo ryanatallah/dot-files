@@ -61,6 +61,10 @@ nmap <Leader>n :TagbarToggle<CR>
 " Comma-m to toggle NERD tree
 map <Leader>m :NERDTreeToggle<CR>
 
+" Split pane shortcuts
+map <Leader>h :vsplit<CR>
+map <Leader>j :split<CR>
+
 
 """""""""""""""""""""""
 " SEARCHING
