@@ -114,3 +114,5 @@ let g:js_fmt_autosave = 1
 " vim-angular
 let g:syntastic_html_tidy_ignore_errors = ['ark-']
 
+" vim-go
+let g:go_fmt_command = "goimports"

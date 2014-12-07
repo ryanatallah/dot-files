@@ -46,9 +46,13 @@ export PS1="\[$Cyan\]\h: \[$Yellow\]\w\[$Green\]\$(parse_git_branch)\n\[$White\]
 #####################
 # ALIASES
 
+# Personal
+
+alias dot="cd ~/Code/ryanatallah/dot-files"
+
 # Arktos
 alias pg="cd ~/Code/arktos/pegasus"
-alias pgcl="cd ~/Code/arktos/pegasus-client"
+alias cn="cd ~/Code/arktos/centaur"
 alias gop="go install && pegasus"
 
 # Go
