@@ -59,4 +59,6 @@ alias gop="go install && pegasus"
 alias goi="go install"
 alias got="go test ./..."
 
+# Git
 
+alias cloc="wc -l \$(git ls-files)" # count lines of code
