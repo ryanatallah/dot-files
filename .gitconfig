@@ -6,9 +6,13 @@
 [alias]
   a = add .
   br = branch
+  dbr = branch -d
+  Dbr = branch -D
   c = commit
   ca = commit -a
   cam = commit -am
   co = checkout
   cob = checkout -b
   st = status
+[push]
+	default = matching

@@ -22,6 +22,8 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/syntastic'
 Plugin 'burnettk/vim-angular'
+Plugin 'tpope/vim-markdown'
+Plugin 'greplace.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

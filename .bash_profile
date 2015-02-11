@@ -44,15 +44,24 @@ export PS1="\[$Cyan\]\h: \[$Yellow\]\w\[$Green\]\$(parse_git_branch)\n\[$White\]
 
 
 #####################
+# TAB COMPLETION
+
+source /usr/local/phabricator/arcanist/resources/shell/bash-completion
+
+#####################
 # ALIASES
 
 # Personal
 
 alias dot="cd ~/Code/ryanatallah/dot-files"
 
-# Arktos
-alias pg="cd ~/Code/arktos/pegasus"
-alias cn="cd ~/Code/arktos/centaur"
+# Argo
+alias pg="cd ~/Code/argo/core/pegasus"
+alias cb="cd ~/Code/argo/core/cerberus"
+alias ar="cd ~/Code/argo/core/arion"
+alias ac="cd ~/Code/argo/core/alicorn"
+alias cn="cd ~/Code/argo/centaur"
+alias px="cd ~/Code/argo/phoenix"
 alias gop="go install && pegasus"
 
 # Go
@@ -60,5 +69,4 @@ alias goi="go install"
 alias got="go test ./..."
 
 # Git
-
 alias cloc="wc -l \$(git ls-files)" # count lines of code
