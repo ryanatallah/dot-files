@@ -70,3 +70,23 @@ alias got="go test ./..."
 
 # Git
 alias cloc="wc -l \$(git ls-files)" # count lines of code
+
+alias disembarc="delete_arcanist_branches"
+
+function delete_arcanist_branches () {
+  prefix="refs/heads/"
+  branches=$(git for-each-ref --format='%(refname:short)' refs/heads/)
+  counter=0
+  for branch in $branches; do
+    if [[ $branch == "arcpatch-"* ]]
+    then
+      let counter+=1
+      git branch -D $branch
+    fi
+  done
+  if [ $counter == 0 ]
+  then
+    echo "No branches to delete."
+  fi
+}
+
