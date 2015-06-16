@@ -24,6 +24,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'burnettk/vim-angular'
 Plugin 'tpope/vim-markdown'
 Plugin 'greplace.vim'
+Plugin 'kylef/apiblueprint.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -106,6 +107,8 @@ set showmatch
 " Show line number on status bar
 set ruler
 
+let &colorcolumn=80                                                             
+hi ColorColumn ctermbg=0
 
 """""""""""""""""""""""
 " PLUGIN CONFIGURATION
@@ -114,7 +117,13 @@ set ruler
 let g:js_fmt_autosave = 1
 
 " vim-angular
-let g:syntastic_html_tidy_ignore_errors = ['ark-']
+let g:syntastic_html_tidy_ignore_errors = [
+  \'ark-', 
+  \'lacks "action',
+  \' proprietary attribute ',
+  \' is not recognized!',
+  \'discarding unexpected',
+  \]
 
 " vim-go
 let g:go_fmt_command = "goimports"

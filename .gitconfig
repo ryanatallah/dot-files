@@ -12,7 +12,9 @@
   ca = commit -a
   cam = commit -am
   co = checkout
+  com = checkout master
   cob = checkout -b
   st = status
+  pom = pull origin master
 [push]
 	default = matching
