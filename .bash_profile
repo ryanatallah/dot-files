@@ -54,6 +54,7 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+
 #####################
 # ALIASES
 
@@ -68,8 +69,7 @@ alias got="go test ./..."
 # Git
 alias cloc="wc -l \$(git ls-files)" # count lines of code
 
-alias disembarc="delete_arcanist_branches"
-
+# Phabricator
 function delete_arcanist_branches () {
   prefix="refs/heads/"
   branches=$(git for-each-ref --format='%(refname:short)' refs/heads/)
@@ -86,6 +86,7 @@ function delete_arcanist_branches () {
     echo "No branches to delete."
   fi
 }
+alias disembarc="delete_arcanist_branches"
 
 # Private Aliases
 source ~/.private_aliases
