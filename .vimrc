@@ -25,6 +25,7 @@ Plugin 'burnettk/vim-angular'
 Plugin 'tpope/vim-markdown'
 Plugin 'greplace.vim'
 Plugin 'kylef/apiblueprint.vim'
+Plugin 'cakebaker/scss-syntax.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -68,6 +69,12 @@ map <Leader>m :NERDTreeToggle<CR>
 map <Leader>h :vsplit<CR>
 map <Leader>j :split<CR>
 
+" Replace word currently under cursor
+nmap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+
+" vim-go shortcuts
+nmap <Leader>g :GoDef<CR>
+nmap <Leader>i :GoInfo<CR>
 
 """""""""""""""""""""""
 " SEARCHING
