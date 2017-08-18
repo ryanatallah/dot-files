@@ -6,6 +6,7 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/phabricator/arcanist/bin
 export GOROOT=`go env GOROOT`
 export PATH=$PATH:$GOROOT/bin
+export PATH=/usr/local/bin:$PATH
 
 
 ######################
