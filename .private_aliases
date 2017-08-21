@@ -1,0 +1,56 @@
+# Private aliases
+# This file should be gitignored from the dot-files repository
+
+########################
+# ClearGraph
+
+alias pg="cd ~/Code/cleargraph/core/pegasus"
+alias cb="cd ~/Code/cleargraph/core/cerberus"
+alias ar="cd ~/Code/cleargraph/core/arion"
+alias ac="cd ~/Code/cleargraph/core/alicorn"
+alias cn="cd ~/Code/cleargraph/web/centaur"
+alias px="cd ~/Code/cleargraph/phoenix"
+alias sp="cd ~/Code/cleargraph/sphinx"
+alias gop="go install && pegasus"
+alias core="cd ~/Code/cleargraph/core"
+alias mycode="cd ~/Code/github.com/ryanatallah"
+
+alias pegasus_local_prod="ARK_CERBERUS_CONFIG=~/.ark/cerberus-local-prod ARK_CHARYBDIS_CONFIG=~/.ark/charybdis-local-prod ARK_PEGASUS_CONFIG=~/.ark/pegasus-local-prod pegasus"
+alias cerberus_local_prod="ARK_CERBERUS_CONFIG=~/.ark/cerberus-local-prod ARK_CHARYBDIS_CONFIG=~/.ark/charybdis-local-prod ARK_PEGASUS_CONFIG=~/.ark/pegasus-local-prod cerberus"
+alias charybdis_local_prod="ARK_CERBERUS_CONFIG=~/.ark/cerberus-local-prod ARK_CHARYBDIS_CONFIG=~/.ark/charybdis-local-prod ARK_PEGASUS_CONFIG=~/.ark/pegasus-local-prod charybdis"
+
+alias pegasus_local_beta="ARK_CERBERUS_CONFIG=~/.ark/cerberus-local-beta ARK_CHARYBDIS_CONFIG=~/.ark/charybdis-local-beta ARK_PEGASUS_CONFIG=~/.ark/pegasus-local-beta pegasus"
+alias cerberus_local_beta="ARK_CERBERUS_CONFIG=~/.ark/cerberus-local-beta ARK_CHARYBDIS_CONFIG=~/.ark/charybdis-local-beta ARK_PEGASUS_CONFIG=~/.ark/pegasus-local-beta cerberus"
+alias charybdis_local_beta="ARK_CERBERUS_CONFIG=~/.ark/cerberus-local-beta ARK_CHARYBDIS_CONFIG=~/.ark/charybdis-local-beta ARK_PEGASUS_CONFIG=~/.ark/pegasus-local-beta charybdis"
+
+alias tlookup="ARK_CERBERUS_CONFIG=~/.ark/cerberus-local-prod cerberus teamInfo"
+alias tclookup="ARK_CERBERUS_CONFIG=~/.ark/cerberus-local-prod ARK_CHARYBDIS_CONFIG=~/.ark/charybdis-local-prod charybdis teamCredentialsInfo"
+alias clookup="ARK_CERBERUS_CONFIG=~/.ark/cerberus-local-prod ARK_CHARYBDIS_CONFIG=~/.ark/charybdis-local-prod charybdis credentialInfo"
+
+alias cgreset="charybdis psql:reset && charybdis warehouse:reset && charybdis kafka:resetOffsets && pegasus psql:reset && curl -X 'DELETE' http://localhost:9200/_all"
+alias cgtest="go test cleargraph/core/... | grep -v 'no test files'"
+
+# Production databases
+alias olympus="PGPASSWORD=ark psql -h ec2-54-191-125-15.us-west-2.compute.amazonaws.com -U ark ark_warehouse_prod"
+alias olympus_replica="PGPASSWORD=ark psql -h ec2-34-209-63-130.us-west-2.compute.amazonaws.com -U ark ark_warehouse_prod"
+alias tartarus="PGPASSWORD=ark psql -h tartarus.cnyeftvdqxwi.us-west-2.rds.amazonaws.com -U ark ark_charybdis_prod"
+alias tartarus_replica="PGPASSWORD=ark psql -h tartarusreplica.cnyeftvdqxwi.us-west-2.rds.amazonaws.com -U ark ark_charybdis_prod"
+alias cerberus_prod="PGPASSWORD=ark psql -h sparta.cnyeftvdqxwi.us-west-2.rds.amazonaws.com -U ark ark_cerberus_prod"
+alias cerberus_replica="PGPASSWORD=ark psql -h spartareplica.cnyeftvdqxwi.us-west-2.rds.amazonaws.com -U ark ark_cerberus_prod"
+alias pegasus_prod="PGPASSWORD=ark psql -h sparta.cnyeftvdqxwi.us-west-2.rds.amazonaws.com -U ark ark_pegasus_prod"
+alias pegasus_replica="PGPASSWORD=ark psql -h spartareplica.cnyeftvdqxwi.us-west-2.rds.amazonaws.com -U ark ark_pegasus_prod"
+alias hydra_prod="PGPASSWORD=ark psql -h sparta.cnyeftvdqxwi.us-west-2.rds.amazonaws.com -U ark ark_hydra_prod"
+
+# Beta databases
+alias cithaeron_beta="PGPASSWORD=ark psql -h ec2-52-26-175-187.us-west-2.compute.amazonaws.com -U ark ark_warehouse_beta"
+alias olympus_beta="PGPASSWORD=ark psql -h ec2-54-191-125-15.us-west-2.compute.amazonaws.com -U ark ark_transactional_beta"
+alias tartarus_beta="PGPASSWORD=ark psql -h tartarus.cnyeftvdqxwi.us-west-2.rds.amazonaws.com -U ark ark_charybdis_beta"
+alias cerberus_beta="PGPASSWORD=ark psql -h sparta.cnyeftvdqxwi.us-west-2.rds.amazonaws.com -U ark ark_cerberus_beta"
+alias pegasus_beta="PGPASSWORD=ark psql -h sparta.cnyeftvdqxwi.us-west-2.rds.amazonaws.com -U ark ark_pegasus_beta"
+
+# Canary databases
+alias cithaeron="PGPASSWORD=ark psql -h ec2-52-26-175-187.us-west-2.compute.amazonaws.com -U ark ark_warehouse_canary"
+alias charybdis_canary="PGPASSWORD=ark psql -h athens.cnyeftvdqxwi.us-west-2.rds.amazonaws.com -U ark ark_charybdis_canary"
+alias pegasus_canary="PGPASSWORD=ark psql -h athens.cnyeftvdqxwi.us-west-2.rds.amazonaws.com -U ark ark_pegasus_canary"
+alias cerberus_canary="PGPASSWORD=ark psql -h athens.cnyeftvdqxwi.us-west-2.rds.amazonaws.com -U ark ark_cerberus_canary"
+alias hydra_canary="PGPASSWORD=ark psql -h athens.cnyeftvdqxwi.us-west-2.rds.amazonaws.com -U ark ark_hydra_canary"

@@ -3,10 +3,12 @@
 	email = mail@ryanatallah.com
 [core]
   editor = vim
+  ignorecase = false
 [alias]
   a = add .
   br = branch
   dbr = branch -d
+  mbr = branch -m
   Dbr = branch -D
   c = commit
   ca = commit -a
