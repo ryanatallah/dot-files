@@ -11,6 +11,7 @@
   mbr = branch -m
   Dbr = branch -D
   c = commit
+  comit = commit
   ca = commit -a
   cam = commit -am
   co = checkout
