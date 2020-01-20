@@ -1,0 +1,8 @@
+atom-beautify@0.33.4
+color-picker@2.3.0
+file-icons@2.1.38
+linter@2.3.1
+linter-eslint@8.5.5
+react@0.18.0
+vim-mode-plus@1.36.4
+

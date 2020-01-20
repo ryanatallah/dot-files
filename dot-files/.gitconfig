@@ -1,6 +1,6 @@
 [user]
-	name = Ryan Atallah
-	email = mail@ryanatallah.com
+  name = Ryan Atallah
+  email = ryan@ryanatallah.com
 [core]
   editor = vim
   ignorecase = false
@@ -19,10 +19,10 @@
   st = status
   pom = pull origin master
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	d = difftool
+  d = difftool
 [push]
-	default = matching
+  default = matching
 [diff]
-	tool = vimdiff
+  tool = vimdiff
 [difftool]
-	prompt = false
+  prompt = false
