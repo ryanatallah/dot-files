@@ -1,4 +1,4 @@
-FILES=~/Code/github.com/ryanatallah/dot-files/.*
+FILES=~/Code/github.com/ryanatallah/system-setup/dot-files/.*
 for f in $FILES
 do
   if [ -f $f ]; then
