@@ -10,7 +10,7 @@ Set up [option navigation](https://medium.com/@jonnyhaynes/jump-forwards-backwar
 
 Start with deletion by going to *Preferences* --> *Profiles* --> *Keys* --> *Left Option Key* --> `Esc+`
 
-Then, set up left/right navigation by adding keyboard shortcuts:
+Then, set up left/right navigation by adding keyboard shortcuts with the following escape sequences:
 
 - ⌥+←: `b`
 - ⌥+→: `f`
@@ -44,3 +44,4 @@ cd system-setup/dot-files
 Install [Vundle](https://github.com/VundleVim/Vundle.vim), and install all plugins.
 
 Install [oh-my-zsh](https://ohmyz.sh/#install)
+
