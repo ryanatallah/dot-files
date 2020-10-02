@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export GOPATH=$HOME/Code/go
+export PATH=$PATH:$GOPATH/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ratallah/.oh-my-zsh"
@@ -113,3 +115,21 @@ function parse_git_branch () {
 #     →
 #
 PROMPT="%{$fg[cyan]%}%m%{$reset_color%}: %{$fg[yellow]%}%~ %{$fg[green]%}\$(parse_git_branch)"$'\n'"%(?.%F{white}→.%F{red}→)%f %{$reset_color%}"
+
+#####################
+# ALIASES
+
+# Personal
+alias dot="cd ~/Code/ryanatallah/dot-files"
+
+# Go
+alias goi="go install"
+alias goii="go install ./..."
+alias got="go test ./..."
+
+# Git
+alias cloc="wc -l \$(git ls-files)" # count lines of code
+
+# Local extensions
+source ~/.zshrc_local
+

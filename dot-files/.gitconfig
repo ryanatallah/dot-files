@@ -1,29 +1,33 @@
 [user]
-  name = Ryan Atallah
-  email = ryan@atallah.family
+	name = Ryan Atallah
+	email = ryan@atallah.family
 [core]
-  editor = vim
-  ignorecase = false
+	editor = vim
+	ignorecase = false
 [alias]
-  a = add .
-  br = branch
-  dbr = branch -d
-  mbr = branch -m
-  Dbr = branch -D
-  c = commit
-  comit = commit
-  ca = commit -a
-  cam = commit -am
-  co = checkout
-  com = checkout master
-  cob = checkout -b
-  st = status
-  pom = pull origin master
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  d = difftool
+	a = add .
+	br = branch
+	dbr = branch -d
+	mbr = branch -m
+	Dbr = branch -D
+	c = commit
+	comit = commit
+	ca = commit -a
+	cam = commit -am
+	co = checkout
+	com = checkout master
+	cob = checkout -b
+	st = status
+	pom = pull origin master
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	d = difftool
 [push]
-  default = matching
+	default = matching
 [diff]
-  tool = vimdiff
+	tool = vimdiff
 [difftool]
-  prompt = false
+	prompt = false
+[url "git@gitlab.tableausoftware.com:"]
+	insteadof = https://gitlab.tableausoftware.com/
+[pager]
+	branch = false
