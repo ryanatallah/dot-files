@@ -13,7 +13,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'tomasiser/vim-code-dark'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
 Plugin 'ervandew/supertab'
@@ -100,7 +100,7 @@ set autoindent
 " Use solarized color schema
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme codedark
 
 " Show information about the current command being run
 set showcmd
