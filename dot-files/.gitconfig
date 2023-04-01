@@ -18,11 +18,11 @@
 	com = checkout master
 	cob = checkout -b
 	st = status
-	pom = pull origin master
+	pom = pull origin main
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	d = difftool
 [push]
-	default = matching
+	default = simple
 [diff]
 	tool = vimdiff
 [difftool]
